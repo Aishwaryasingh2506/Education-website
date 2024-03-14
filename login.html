@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>Login</title>
+<style>
+.main{height:725px;
+      width:1280px;
+      background-color:green;
+     }
+.row{background-image:url("11.jpg");background-attachment:scroll;
+background-repeat:no-repeat;
+background-size:cover;height:725px;width:1280px;text-align:center;}
+</style>
+<script>
+function validateform()
+{
+var name=document.myform.name.value;
+var password =document.myform.password.value;
+if(name=="Aishwarya" && password=="123456")
+{
+alert("Login Successfully");
+return true;
+}
+else if(name=="Aishwarya" && password!="123456")
+{
+alert("enter valid password");
+}
+
+else
+{
+alert("enter the valid details")
+return false;
+}
+}
+</script>
+</head>
+
+<body>
+
+<div class="main">
+<div class="row">
+<form name="myform" action="1.html" onsubmit="return validateform()">
+<legend><h1>Login2</h1></legend>
+Username:<input type="text" name="name" ><br><br>
+Password:<input type="password" name="password"/><br><br>
+
+<br>
+<input type="submit" value="send"/>
+<br>
+
+</form>
+</div>
+</div>
+
+</body>

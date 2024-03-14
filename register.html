@@ -1,0 +1,98 @@
+<html>
+<head>
+<title> Register </title>
+<link rel="stylesheet" href="css/css.css" type="text/css" />
+<script>
+
+function validatereg()
+{
+var nam = document.form.name.value;
+var ag = document.form.age.value;
+var mob = document.form.mobno.value;
+var email=document.form.email.value;
+
+if (nam == "Aishwarya" && mob == "8888888888" && ag == "19" && email=="xyz123@gmail.com")
+{
+	alert("Registration Successful");
+	return true;
+}
+else if (nam == "" | mob != "8888888888" | ag == ""|email=="") 
+{
+alert("Enter valid details");
+return false;
+}
+
+}
+
+</script>
+</head>
+<body>
+<div class="main6">
+<div class="ro1">
+<div class="ro1-col1"><a href="1.html" target="_blank">Home</a>
+</div>
+<div class="ro1-col2"><a href="streams.html" target="_blank">Various Jobs</a></div>
+<div class="ro1-col3"><a href="register.html" target="_blank">Register</a></div>
+<div class="ro1-col4"><a href="contact.html" target="_blank">Contact</a></div>
+</div>
+<div class="ro2">
+       
+	<span class="highlight" ><form name = "form" action = "1.html" onsubmit="return validatereg();">
+
+<fieldset>
+<legend><h1>Registration Form</h1></legend>
+name:<input type = "text" name = "name"/>
+<br>
+<br>
+address:<textarea name = "address"> </textarea>
+<br>
+<br>
+gender:<input type="radio" value = "m" name = "gender"/>male
+
+<input type="radio"value = "f" name = "gender"/>female
+<br>
+<br>
+Age:<input type = "number" name = "age"/>
+<br>
+<br>
+E-mail:<input type = "email" name = "email"/>
+<br>
+<br>
+Mobile No.:<input type = "number" name = "mobno"/>
+<br>
+<br>
+Stream:<select>
+<br>
+<br>
+<option>Arts</option>
+<option>Commerce</option>
+<option>Science Biology</option>
+<option>Science Mathematics</option>
+</select>
+Country:<select>
+<br>
+<br>
+<option>India</option>
+<option>Brazil</option>
+<option>USA</option>
+<option>Utah</option>
+
+<br>
+<br>
+<input type = "submit" value="submit"/>
+<input type="reset" value="reset"/>
+
+
+</fieldset>
+
+</form>
+</span><br><br>
+
+
+</div>
+<div class="ro3">
+|<a href="1.html" target="_blank">Home</a>|<a href="streams.html" target="_blank">Various Jobs</a>|<a href="register.html" target="_blank">Register</a>|<a href="contact.html" target="_blank">Contact</a>|
+</div>
+</div>
+</body>
+</html>
